@@ -1,0 +1,53 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="false">×</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title" id="lineModalLabel">{{modalTitle}}</h3>
+    </div>
+    <div class="modal-body">
+
+        <!-- content goes here -->
+        <form>
+          <div class="form-group">
+            <label for="placa">Placa do Carro:</label>
+            <input type="text" class="form-control" id="placa" ng-model="currentCar.placa">
+          </div>
+          <div class="form-group">
+            <label for="renavam">Renavam do Carro:</label>
+            <input type="text" class="form-control" id="renavam" ng-model="currentCar.renavam">
+          </div>
+          <div class="form-group">
+            <label for="marca">Marca do Carro:</label>
+            <input type="text" class="form-control" id="marca" ng-model="currentCar.Marca">
+          </div>
+          <div class="form-group">
+            <label for="marca">Modelo do Carro:</label>
+            <input type="text" class="form-control" id="marca" ng-model="currentCar.Modelo">
+          </div>    
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+        <div class="btn-group btn-group-justified" role="group" aria-label="group button">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" data-dismiss="modal"  role="button">Close</button>
+            </div>
+            <div class="btn-group btn-delete hidden" role="group">
+                <button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="saveImage" class="btn btn-default btn-hover-green" data-action="save" ng-click="SaveEntry(currentCar.placa, currentCar.renavam)" role="button">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+      <meta charset="utf-8">
+
+      <title>The HTML5 Herald</title>
+      <meta name="description" content="The HTML5 Herald">
+      <meta name="author" content="SitePoint">
+        
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <!--link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"-->
+        
+      <!--link rel="stylesheet" href="css/main.css"-->
+      <link rel="stylesheet" href="layout/css/navbar.css">
+      <link rel="stylesheet" href="layout/css/cards.css">
+      
+
+      <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+    </head>
+    
+    <body>
+        
+        <!-- Inicio da Navbar -->
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <nav class="navbar navbar-default navbar-inverse " role="navigation">
+          <div class="w-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Sistema de Gestão FastCarro</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!--li class="active"><a href="#">Link</a></li-->
+                <!--li><a href="#">Link</a></li-->
+                
+              </ul>
+              <!--form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form-->
+              <ul class="nav navbar-nav navbar-right">
+                <!--li><p class="navbar-text">Already have an account?</p></li-->
+                
+                <li class="dropdown">
+                  <a href class="dropdown-toggle" data-toggle="dropdown"><b>Menu</b> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Controle da Loja</a></li>
+                    <li><a href="#">Painel de Leilões</a></li>
+                    <li><a href="#">Análise de Logs</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Indicadores de Peformance</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sair do sistema</a></li>
+                  </ul>
+                </li>
+                  
+                <li class="dropdown">
+                  <a href class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                    <ul id="login-dp" class="dropdown-menu">
+                        <li>
+                             <div class="row">
+                                    <div class="col-md-12">
+                                        Login via
+                                        <div class="social-buttons">
+                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                        </div>
+                                        or
+                                         <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                     <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                     <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                     <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                     <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                     <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                     <label>
+                                                     <input type="checkbox"> keep me logged-in
+                                                     </label>
+                                                </div>
+                                         </form>
+                                    </div>
+                                    <div class="bottom text-center">
+                                        New here ? <a href="#"><b>Join Us</b></a>
+                                    </div>
+                             </div>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- Fim da Navbar -->
+        
+        
+        
+       <!-- Inicio do Conteudo da Pagina -->
+
+        <div class="content">
+            <div class="container">			
+                <div class="row">
+      
+                    <div class="col-md-12 margin-bottom-30">
+                        <!-- BEGIN Portlet PORTLET-->
+                        <div class="portlet">
+                            <div class="portlet-title">
+                                <div class="caption caption-red">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                    <span class="caption-subject text-uppercase"> Gráfico de Agendamentos</span>
+                                    <span class="caption-helper">estatísticas...</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn grey-salsa active">
+                                        <input type="radio" name="options" class="toggle" id="option1">Hoje</label>
+                                        <label class="btn grey-salsa">
+                                        <input type="radio" name="options" class="toggle" id="option2">Semana</label>
+                                        <label class="btn grey-salsa">
+                                        <input type="radio" name="options" class="toggle" id="option2">Mes</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portlet-body" data-ng-include data-src="partialFileGrafico">
+                                
+                            </div>
+                        </div>
+                        <!-- END Portlet PORTLET-->
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 margin-bottom-30">
+                        <!-- BEGIN Portlet PORTLET-->
+                        <div class="portlet portlet-bordered">
+                            <div class="portlet-title">
+                                <div class="caption caption-red">
+                                    <i class="glyphicon glyphicon-cog"></i>
+                                    <span class="caption-subject text-uppercase"> Controle de Fila</span>
+                                    <span class="badge">6</span>
+                                </div>
+                                <div class="actions">
+                                    <a href="javascript:;" class="btn btn-red btn-circle active">
+                                        <i class="glyphicon glyphicon-paperclip"></i>
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-red btn-circle">
+                                        <i class="glyphicon glyphicon-pencil"></i>
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-red btn-circle">
+                                        <i class="glyphicon glyphicon-trash"></i>
+                                    </a>
+                                    <a href="javascript:;" class="btn btn-red btn-circle">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                
+                                
+                                <div class="tab-pane active" data-ng-include data-src="partialFileFila">
+                                         <!--Dynamic Partial Content -->   
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                        <!-- END Portlet PORTLET-->
+                    </div>
+
+                    <div class="col-md-4 margin-bottom-30">
+                        <!-- BEGIN Portlet PORTLET-->
+                        
+                         <div class="portlet">
+                            <div class="portlet-title">
+                                <div class="caption caption-red">
+                                    <i class="glyphicon glyphicon-pushpin"></i>
+                                    <span class="caption-subject bold font-yellow-crusta text-uppercase">
+                                    Vistoria </span>
+                                    <span class="badge">3</span>
+                                    
+                                </div>
+                                
+                                
+                                
+                                
+                                <ul class="nav nav-tabs">
+                                    <li id="ontemTab">
+                                        <a  ng-click="selectTab('ontemTab')">
+                                        Ontem </a>
+                                    </li>
+                                    <li id="hojeTab">
+                                        <a  ng-click="selectTab('hojeTab')">
+                                        Hoje </a>
+                                    </li>
+                                    <li id="agoraTab" class="active">
+                                        <a  ng-click="selectTab('agoraTab')">
+                                        Agora</a>
+                                    </li>
+                                </ul>
+                                                    
+                            </div>
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" data-ng-include data-src="partialFile">
+                                         <!--Dynamic Partial Content -->   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END Portlet PORTLET-->
+                    </div>
+                </div>
+
+                <div class="row">
+        
+                    <div class="col-md-12">
+                        <!-- BEGIN Portlet PORTLET-->
+                        <div class="portlet">
+                            <div class="portlet-title">
+                                <div class="caption caption-red">
+                                    <i class="glyphicon glyphicon-pushpin"></i>
+                                    <span class="caption-subject bold font-yellow-crusta text-uppercase">
+                                    Carros Vistoriados </span>
+                                    <span class="badge">4</span>
+                                </div>
+   
+                                 <div class="actions">
+                                    <a href="#carousel-example"
+                                            data-slide="prev" class="btn btn-red btn-circle ">
+                                        <i class="glyphicon glyphicon-chevron-left"></i>
+                                    </a>
+                                    <a href="#carousel-example" data-slide="next" class="btn btn-red btn-circle">
+                                        <i class="glyphicon glyphicon-chevron-right"></i>
+                                    </a>
+                                   
+                                </div>
+
+                            </div>
+
+                            <div class="portlet-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="portlet_tab1">
+                                        
+                                        <!--Card Carrouseel-->
+                                        <!-------------------------------------------------------------------------------------------------------------------------------------------->
+                                            <div class="row card-container-special">
+                                                <div class="row ">
+                                                    <div class="col-md-9">
+                                                      
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <!-- Controls -->
+
+                                                    </div>
+                                                </div>
+                                                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                                                    <!-- Wrapper for slides -->
+                                                    <div class="carousel-inner">
+                                                        <div class="item active">
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Prisma LTZ 1.6</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        R$ 24.500,00</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href class="hidden-sm" data-toggle="modal" data-target="#squarespaceModal">Lançar Leilão</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Revisar</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Product Example</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $249.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Next Sample Product</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $149.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Sample Product</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $199.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Product with Variants</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $199.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Grouped Product</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $249.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Product with Variants</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $149.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <div class="col-item">
+                                                                        <div class="photo">
+                                                                            <img src="layout/images/prisma.jpg" alt="a" />
+                                                                        </div>
+                                                                        <div class="info">
+                                                                            <div class="row">
+                                                                                <div class="price col-md-6">
+                                                                                    <h5>
+                                                                                        Product with Variants</h5>
+                                                                                    <h5 class="price-text-color">
+                                                                                        $199.99</h5>
+                                                                                </div>
+                                                                                <div class="rating hidden-sm col-md-6">
+                                                                                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                                                    </i><i class="fa fa-star"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="separator clear-left">
+                                                                                <p class="btn-add">
+                                                                                    <i class="fa fa-shopping-cart"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">Add to cart</a></p>
+                                                                                <p class="btn-details">
+                                                                                    <i class="fa fa-list"></i><a href="http://www.jquery2dotnet.com" class="hidden-sm">More details</a></p>
+                                                                            </div>
+                                                                            <div class="clearfix">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>       
+                                        <!--/.Card-->
+
+                                    </div>
+                                    <div class="tab-pane" id="portlet_tab2">
+                                        <h4>Tab 2 Content</h4>
+                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                                    </div>
+                                    <div class="tab-pane" id="portlet_tab3">
+                                        <h4>Tab 3 Content</h4>
+                                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Portlet PORTLET-->
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <center>
+        <strong>Desenvolvido por <a href="http://fastcarros-d5172.firebaseapp.com" target="_blank">Grupo FastCarro</a></strong>
+        </center>
+        <br>
+        <br>
+        
+       <!-- Fim do conteudo da pagina -->
+        
+        <!-- Inicio do modal -->
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="modal fade" id="admModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog" data-ng-include data-src="partialModal"></div>
+        </div>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>    
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
+
+    </body>
+</html>
+

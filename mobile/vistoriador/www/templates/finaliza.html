@@ -1,0 +1,45 @@
+<ion-view title="Fim" id="page3">
+    <div class="bar bar-header stepBar">
+            <div class="morePadding">
+                <img src="img/Step5.png" height="auto" style="display: block; margin-left: auto; margin-right: auto;" class="imgStepBar"></div>
+    </div>
+    <ion-content padding="true" class="has-header contentPadding">
+
+     <div class="finalizabox">
+        <div class="checkboxFinaliza">
+          <div><img src="img/success.png" class="iconOk">
+          </div>
+          <div>
+            <div class="bluetext">Vistoria finalizada em:</div>
+          </div>
+          <div>
+            <div class="finalizatempo">{{totalTime}}</div>
+          </div>
+          <div>
+            <div class="minutostext">minutos</div>
+          </div>
+        </div>
+        <div class="resumodiv">
+        
+            <label class="item customDescItem">
+                <span class="input-label">Resumo do avaliador:</span>
+
+                <textarea rows="5" style="width: 100%; background-color: #fafafe"
+                    placeholder="Enter Notes"
+                    id="txtnotes"
+                    ng-keyup="expandText()"
+                    ng-keydown="expandText()">
+                </textarea>
+            </label>
+            
+        </div>
+      </div>
+        
+    </ion-content>
+    <div style="position: absolute; bottom: 0px; width: 100%">
+        <button class="button button-full button-energized" ui-sref="menu.filaDeVistoria">
+            Finalizar
+        </button>
+    </div>
+    
+</ion-view>

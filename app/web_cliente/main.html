@@ -1,0 +1,177 @@
+ 
+<div class="sessexplica">
+    <div class="imgback">
+        <span us-spinner="{radius:30, width:8, length: 16}" spinner-on="showSpinner" spinner-start-active="true"></span>
+      <div class="w-container">
+        <div class="painelavalia">
+          <div class="fipecontent"> 
+            <h2 class="whitetitle">Venda seu Carro</h2>
+            <div class="formblock w-form">
+              <!--form data-name="Email Form" id="email-form" name="email-form" -->
+                
+                <label class="label" for="cbMarca">Selecione a Marca:</label>
+                <select class="w-select" data-name="cbMarca" id="cbMarca" name="cbMarca" required="required" ng-model="selectedMarca" ng-change="updateModelos(selectedMarca)">
+                  <option value="0" disabled selected>Selecione...</option>
+                  <option ng-repeat="marca in marcas" value="{{marca.codigo}}" on-finish-render="ngLoadMarca">{{marca.nome}}</option>
+                </select>
+                <label for="email">Selecione o Modelo:</label>
+                <select class="w-select" data-name="cbModelo" id="cbModelo" name="cbModelo" ng-model="selectedModelo" ng-change="updateAnos(selectedMarca,selectedModelo)">
+                  <option value="0" disabled selected>Selecione...</option>
+                  <option ng-repeat="modelo in modelos.modelos" value="{{modelo.codigo}}" on-finish-render="ngLoadModelo">{{modelo.nome}}</option>
+                </select>
+                <label for="cbAno">Selecione o Ano:</label>
+                <select class="w-select" data-name="cbAno" id="cbAno" name="cbAno" ng-model="selectedAno" ng-change="updateKm(selectedMarca,selectedModelo,selectedAno)">
+                  <option value="0" disabled selected>Selecione...</option>
+                  <option ng-repeat="ano in anos" value="{{ano.codigo}}" on-finish-render="ngLoadAno">{{ano.nome}}</option>
+                </select>
+                <label for="cbKm">Selecione o Quilometragem:</label>
+                <select class="w-select" data-name="cbKm" id="cbKm" name="cbKm" ng-model="selectedKm" ng-change="updateBlindagem(selectedMarca,selectedModelo,selectedAno,selectedKm)">
+                  <option value="0" disabled selected>Selecione...</option>
+                  <option ng-repeat="km in kms" value="{{km.desconto}}" on-finish-render="ngLoadKm">{{km.faixa}}</option>
+                </select>
+                <label for="cbBlindado">Carro Blindado?</label>
+                <select class="w-select" data-name="cbBlindado" id="cbBlindado" name="cbBlindado">
+                  <option value="0" disabled selected>Selecione...</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>
+                <div class="w-checkbox">
+                  <input class="w-checkbox-input" data-name="Checkbox" id="checkbox" name="checkbox" required="required" type="checkbox">
+                  <label class="w-form-label" for="checkbox">Eu concordo com os Termos de Uso</label>
+                </div>
+                <input class="fipesubmitbtn w-button" data-wait="Please wait..." type="submit" value="Faça uma Avaliação Grátis" ng-click="go('/step1')">
+              <!--/form -->
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="sesscaption">
+        <div class="sesscaption">Venda seu carro em 30 minutos</div>
+      </div>
+      <div>
+        <p class="sesstext">Usando a nossa plataforma você faz o melhor negócio com 3 passos simples!</p>
+      </div>
+    </div>
+  </div>
+  <div class="whitecontainer">
+    <div class="w-container">
+      <div>
+        <div class="stepsrow w-row">
+          <div class="w-col w-col-4">
+            <div><img class="centericon" src="layout/images/price-tag.png">
+            </div>
+            <div class="stepcaption">
+              <h3>Avalie seu <br>Carro!</h3>
+            </div>
+            <div>
+              <p class="steptext">Nós desenvolvemos uma fórmula especial para você estimar quanto um carro como o seu é normalmente negociado no mercado. Você pode preencher o formulário online inteiramente grátis e ter uma excelente estimativa de quanto vale o seu carro. Nós fizemos o trabalho pesado por você, nosso sistema é integrado à tabela FIPE e leva em consideração as características mais importantes do carro para determinar o valor.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-4">
+            <div><img class="centericon" src="layout/images/calendar.png">
+            </div>
+            <div class="stepcaption">
+              <h3>Agende uma<br>Vistoria</h3>
+            </div>
+            <div>
+              <p class="steptext">Com o valor estimado do seu carro em mente, tudo que você tem a fazer é agendar uma vistoria presencial em nossa loja para que um profissional verifique todos os detalhes que são importantes na negociação. Em 30 minutos iremos fotografar seu carro e fazer todas as observações. O nosso objetivo é fazer uma avaliação realista para que os nossos revendedores associados possam fazer ofertas pelo seu carro com segurança</p>
+            </div>
+          </div>
+          <div class="w-col w-col-4">
+            <div><img class="centericon" src="layout/images/like.png">
+            </div>
+            <div class="stepcaption">
+              <h3>Venda pelo<br>Melhor Preço</h3>
+            </div>
+            <div>
+              <p class="steptext">Ao término da Vistoria, seu carro entra em nossa plataforma digital e nossos mais de 500 revendedores associados são convidados a verificar a vistoria e as fotos do seu veículo. Nos próximos 30 minutos eles estarão utilizando nossa plataforma para darem lances no seu carro.
+                <br>Ao final do tempo, você pode vender seu carro pelo maior lance. &nbsp;Tudo com transparência e muita rapidez, poupando seu tempo e esforço.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="divider"></div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div class="containedspaced w-container">
+        <div class="sesscaption">
+          <div class="sesscaption">Qual a vantagem?</div>
+        </div>
+        <div>
+          <p class="sesstext">Ao invés de rodar por toda a cidade atrás de uma loja que pague um preço justo no seu carro, tudo o que você precisa fazer é acessar o nosso site e seguir os 3 passos! É fácil, rápido e muito barato. Você economiza tempo e esforço e ainda vende o seu carro pelo melhor valor.</p>
+        </div>
+        <div class="divbtn"><a class="sessbtn w-button" href="#">AVALIE SEU CARRO GRÁTIS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sesscusto">
+    <div class="containedspaced w-container">
+      <div class="sesscaption">
+        <div class="sesscaption">Quanto Custa?</div>
+      </div>
+      <div>
+        <p class="sesstext">Por menos do que você imagina você vende seu carro muito mais rápido</p>
+      </div>
+      <div>
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <div><img class="centericon" src="layout/images/money.png">
+            </div>
+            <div class="stepcaption">
+              <h3>Para Você</h3>
+            </div>
+            <div>
+              <p class="steptext">Se não fechar negócio você não tem custo algum. Se você receber uma boa oferta pelo seu carro e fechar negócio, cobramos uma taxa fixa de negociação no valor de R$ 500,00.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-6">
+            <div><img class="centericon" src="layout/images/car.png">
+            </div>
+            <div class="stepcaption">
+              <h3>Para quem Compra</h3>
+            </div>
+            <div>
+              <p class="steptext">Nossos revendedores associados cobrem grande parte dos nossos custos ao pagarem uma taxa de negociação de 5% do valor do lance vencedor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="sesscaption">
+        <div class="sesscaption">Onde estamos?</div>
+      </div>
+      <div>
+        <p class="sesstext">A FastCarro está na região que mais cresce no Rio de Janeiro</p>
+      </div>
+    </div>
+  </div>
+  <div class="sessmap">
+    <div class="w-container" >
+      <!--div class="w-widget w-widget-map" data-widget-latlng="-22.973808,-43.364993" data-widget-style="roadmap" data-widget-tooltip="FastCarro" data-widget-zoom="14" ng-init="initializeMap()"></div-->
+        <ng-map zoom="15" center="[-22.973808,-43.364993]" >
+            <marker position="-22.973808,-43.364993" title="Loja FastCarro" animation="Animation.BOUNCE" tootip="Loja Fast Carro<br>Av. Abelardo bueno 1"></marker>
+        </ng-map>
+       
+    </div>
+  </div>
+  

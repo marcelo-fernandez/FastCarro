@@ -1,0 +1,26 @@
+<ion-view title="Login" id="page4" style="background-color:#045684;">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/Gze8BM51T9ByvrJnDEi6_LogoNovoV4Verde.png" width="70%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <form id="login-form1" name="frmlogin" class="list">
+            <div class="spacer" style="height: 40px;"></div>
+            <ion-list id="login-list1">
+                <label class="item item-input logonField" id="login-input1">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="" ng-model="login.user">
+                </label>
+                <label class="item item-input" id="login-input2">
+                    <span class="input-label">Senha</span>
+                    <input type="password" placeholder="" ng-model="login.pass">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"><div class="loginErroMsg">{{erro}}</div></div>
+            <!--a ui-sref="menu.filaDeVistoria" id="login-button1" class="button button-energized  button-block" ng-click="logIn()">Log in</a-->
+            <!--a id="login-button1" class="button button-energized  button-block" ng-click="logIn()">Log in</a-->
+        </form>
+    </ion-content>
+    <div style="position: absolute; bottom: 0px; width: 100%">
+        <a id="login-button1" class="button button-energized  button-block" ng-click="logIn()">Log in</a>
+    </div>
+</ion-view>

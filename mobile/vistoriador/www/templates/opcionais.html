@@ -1,0 +1,35 @@
+<ion-view title="Opcionais" id="page1">
+    <!--ion-spinner class="centered-spinner" icon="lines" ng-hide="sQueue">Loading...</ion-spinner-->
+    <div class="bar bar-header stepBar">
+            <div class="morePadding">
+                <img src="img/Step3.png" height="auto" style="display: block; margin-left: auto; margin-right: auto;" class="imgStepBar"></div>
+    </div>
+    <ion-content padding="true" class="has-header contentPadding">
+        
+        <ion-list show-delete="false" can-swipe="true">
+            <div class="item item-divider"> 
+                {{checkupItems.length}} itens
+            </div>
+          <ion-item class="custom-class item item-checkbox item-text-wrap" ng-repeat="(key,item) in checkupItems">
+            <label class="checkbox">
+              <input type="checkbox" ng-model="item.Check" ng-change="checkupItems.$save(item)">
+              <!--input type="checkbox" ng-model="item.Check"-->
+            </label>
+            <div class="textItem">{{ item.Descricao }}</div>
+            <ion-option-button class="button-info" ui-sref="menu.detalhar({tKind:'Opcionais', id: item.id})">
+              Detalhar
+            </ion-option-button>
+          </ion-item>
+        </ion-list>
+
+    </ion-content>
+    
+    <div style="position: absolute; bottom: 0px; width: 100%">
+        <button class="button button-full button-energized" ng-click="saveOpcionais()">
+            Próximo
+        </button>
+    </div>
+ 
+</ion-view>
+
+<ion-item ng-repeat=" (key, fila) in sQueue " class="item-icon-left" id="filaDeVistoria-list-item7" ui-sref="menu.vistoria({objIdx:key, clientid:fila.$id})">

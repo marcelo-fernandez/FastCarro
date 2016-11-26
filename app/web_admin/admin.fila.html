@@ -1,0 +1,37 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Hora</th>
+        <th>Nome</th>
+        <th>Tel</th>
+        <th>Veiculo</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id={{agendamento.$id}} ng-class="ChangeColor(agendamento.carro.prontoParaVistoria)" ng-repeat="(key, agendamento) in scheduledCars">
+            <td>{{$index + 1}}</td>  
+            <td>{{agendamento.dados.HoraCode}}</td>
+            <td>{{agendamento.dados.Nome  | cut:true:20:'...'}}</td>
+            <td>{{agendamento.dados.Tel}}</td>
+            <td>{{agendamento.carro.Modelo | cut:true:20:'...'}} ({{agendamento.carro.AnoModelo}})</td>
+            <td>
+                <div class="actions">
+                    <a href="javascript:;" class="btn btn-red btn-circle active" ng-click='ModalCarEntry(agendamento.$id, agendamento.carro, agendamento.dados)'>
+                        <i class="glyphicon glyphicon glyphicon-log-in"></i>
+                    </a>
+                    <a href="javascript:;" class="btn btn-red btn-circle">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </a>
+                    <a href="javascript:;" class="btn btn-red btn-circle">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </a>
+                    <a href="javascript:;" class="btn btn-red btn-circle">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </a>
+                </div>
+              </td>
+        </tr>
+    </tbody>
+</table>

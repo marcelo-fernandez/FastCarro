@@ -1,0 +1,51 @@
+<ion-view title="Vistoria" id="page3">
+    <div class="bar bar-header stepBar">
+            <div class="morePadding">
+                <img src="img/Step1.png" height="auto" style="display: block; margin-left: auto; margin-right: auto;" class="imgStepBar"></div>
+    </div>
+    <ion-content padding="true" class="has-header contentPaddingLess">
+
+        <form id="vistoria-form3" class="list">
+            <div class="spacer" style="width: 300px; height: 38px;"></div>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Proprietario</span>
+                <input type="text" placeholder="" ng-model="sQueue.dados.Nome">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Marca</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.Marca">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Modelo</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.Modelo">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Km</span>
+                <input type="text" placeholder="" ng-model="sQueue.km">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Ano Modelo</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.AnoModelo">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Ano Fabricacao</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.AnoFabrica">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Placa</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.placa">
+            </label>
+            <label class="item item-input" id="vistoria-input5">
+                <span class="input-label">Renavam</span>
+                <input type="text" placeholder="" ng-model="sQueue.carro.renavam">
+            </label>
+
+        </form>
+    </ion-content>
+    <div style="position: absolute; bottom: 0px; width: 100%">
+        <button class="button button-full button-energized" ui-sref="menu.fotos">
+            Próximo
+        </button>
+    </div>
+    
+</ion-view>

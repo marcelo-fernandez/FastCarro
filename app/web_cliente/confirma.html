@@ -1,0 +1,38 @@
+
+  <div>
+    <div class="w-container"><img class="wizardimg" src="layout/images/wizard3.png">
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="wizardformcontainer">
+        <div>
+          <div class="stepcaption">
+            <h3>Seu agendamento foi concluido!</h3>
+          </div>
+        </div>
+        <p class="sesstext">Enviamos um email de confirmacao para voce.</p>
+        <div>
+          <div class="w-row">
+            <div class="w-col w-col-6">
+              <div class="agendablock priceblock"><img class="centericon iconpad" src="layout/images/calendar.png">
+                <div class="pricetext">Dia:</div>
+                <div class="agendatext pricetext">{{agenda.data}}</div>
+                <div class="pricetext">Hora:</div>
+                <div class="agendatext pricetext">{{agenda.hora}}</div>
+              </div>
+            </div>
+            <div class="w-col w-col-6">
+              <!--div class="w-widget w-widget-map" data-widget-latlng="-22.973808,-43.364993" data-widget-style="roadmap" data-widget-tooltip="FastCarro" data-widget-zoom="14"></div-->
+                <ng-map zoom="15" center="[-22.973808,-43.364993]" >
+                    <marker position="-22.973808,-43.364993" title="Loja FastCarro" animation="Animation.BOUNCE" tootip="Loja Fast Carro<br>Av. Abelardo bueno 1"></marker>
+                </ng-map>
+              <div class="btncenter">Av. Embaixador Abelardo Bueno nº 1 - Barra da Tijuca</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    

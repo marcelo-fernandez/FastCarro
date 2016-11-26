@@ -1,0 +1,31 @@
+<ion-view title="Detalhamento" id="page1" >
+    <!--ion-spinner class="centered-spinner" icon="lines" ng-hide="sQueue">Loading...</ion-spinner-->
+    
+    <ion-content >
+        
+        <button class="button button-icon icon ion-camera icon-left" ng-click="takePicture('Foto')">
+            Foto no detalhe
+        </button>
+        
+        <label class="item">
+        <span class="input-label">Descrição:</span>
+        
+            <textarea style="width: 100%; background-color: #fafafe"
+            placeholder="Enter Notes"
+            id="txtnotes"
+            ng-keyup="expandText()"
+            ng-keydown="expandText()" ng-model="comment.text">
+        </textarea>
+        
+        </label>
+        
+        
+    </ion-content>
+    
+    <div style="position: absolute; bottom: 0px; width: 100%">
+        <button class="button button-full button-energized" ng-click="saveComment()">
+            Salvar
+        </button>
+    </div>
+ 
+</ion-view> 

@@ -1,0 +1,34 @@
+<ion-view title="Fotos" id="page2">
+    <div class="bar bar-header stepBar">
+            <div class="morePadding">
+                <img src="img/Step2.png" height="auto" style="display: block; margin-left: auto; margin-right: auto;" class="imgStepBar"></div>
+    </div>
+    <ion-content padding="true" class="has-header contentPadding">
+    
+        <button class="button button-full" ng-click="takePicture('frente')">
+            Tirar Foto Frente
+        </button>
+        
+        <button class="button button-full" ng-click="takePicture('esquera')">
+            Tirar Foto Lateral Esquerda
+        </button>
+        
+        <button class="button button-full" ng-click="takePicture('direita')">
+            Tirar Foto Lateral Direita
+        </button>
+        
+        <button class="button button-full" ng-click="takePicture('traseira')">
+            Tirar Foto Traseira
+        </button>
+        
+        <!--img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+        <img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300"-->
+        
+    </ion-content>
+       <div style="position: absolute; bottom: 0px; width: 100%">
+        <button class="button button-full button-energized" ui-sref="menu.opcionais">
+            Próximo
+        </button>
+    </div>
+    
+</ion-view>

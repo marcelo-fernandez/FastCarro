@@ -1,0 +1,29 @@
+$energized: #F36819;
+$positive: #045684;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.logonField {
+	background-color: none !important;
+}
+
+.option {
+	/* Caixa: */
+	/* Controle de Fila: */
+	font-family: Roboto-Regular;
+	font-size: 48px;
+	color: #FFFFFF;
+	line-height: 48px;
+	/* …: */
+	font-family: Roboto-Black;
+	font-size: 75px;
+	color: #29A55C;
+	line-height: 48px;
+	/* \10: */
+	font-family: Roboto-Bold;
+	font-size: 45px;
+	color: #4B4B4B;
+	line-height: 48px;
+	/* two-cars-in-line: */
+	background: rgba(0,0,0,0.70);
+}
+

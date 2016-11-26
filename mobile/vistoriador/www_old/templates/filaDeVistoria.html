@@ -1,0 +1,20 @@
+<ion-view title="Fila de Vistoria" id="page1">
+    <ion-spinner class="centered-spinner" icon="lines" ng-hide="sQueue">Loading...</ion-spinner>
+    <ion-content padding="true" class="has-header" ng-show="sQueue">
+        <div class="item item-body" id="filaDeVistoria-list-item-container1">
+            <div id="filaDeVistoria-markdown1" style="margin-top:0px;color:#000000;">
+                <p>Selecione o carro</p>
+            </div>
+        </div>
+        
+        <ion-list id="filaDeVistoria-list3">
+                
+            <ion-item ng-repeat=" (key, fila) in sQueue " class="item-icon-left" id="filaDeVistoria-list-item7" ui-sref="menu.vistoria({objIdx:key, clientid:fila.$id})">
+                <i class="icon ion-android-car"></i>Placa: {{fila.carro.placa}} 
+                <br>{{fila.carro.Marca}}
+                <br>{{fila.carro.Modelo}}
+                <br>{{fila.dados.HoraCode}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

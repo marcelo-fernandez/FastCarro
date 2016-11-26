@@ -1,0 +1,50 @@
+  <div>
+    <div class="w-container"><img class="wizardimg" src="layout/images/wizard3.png">
+    </div>
+  </div>
+  <div>
+    <div class="w-container">
+      <div class="wizardformcontainer">
+        <div>
+          <div class="stepcaption">
+            <h3>Agende dia e hora</h3>
+          </div>
+        </div>
+        <p class="sesstext">Traga seu carro, faça a vistoria e lance na plataforma</p>
+        <div>
+          <div class="w-row">
+            <div class="w-col w-col-6">
+              <div class="w-form">
+                <!--form data-name="Email Form" id="email-form" name="email-form"-->
+                  <label for="field">Selecione a Data:</label>
+                  <select class="w-select" id="field" name="field" ng-model="sDate" ng-change="CarregaHorarios(sDate)">
+                    <option ng-repeat="(key,value) in sDates" value="{{key}}"  >{{value}}</option>
+                  </select>
+                  <label for="field">Selecione a Hora:</label>
+                  <select class="w-select" data-name="Field 2" id="field-2" name="field-2"  ng-model="sTime">
+                    <option value="">Select one...</option>
+                     <option ng-repeat="(key,value) in sTimes" value="{{key}}" >{{value}}</option>
+                  </select>
+                  <input class="btncenter w-button" data-wait="Please wait..." type="submit" value="Agendar minha Visita" ng-click="Agendar(sDate, sTime)">
+                <!--/form-->
+                <div class="w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-col w-col-6">
+              <!--div class="w-widget w-widget-map" data-widget-latlng="-22.973808,-43.364993" data-widget-style="roadmap" data-widget-tooltip="FastCarro" data-widget-zoom="14"></div-->
+                <ng-map zoom="15" center="[-22.973808,-43.364993]" >
+                    <marker position="-22.973808,-43.364993" title="Loja FastCarro" animation="Animation.BOUNCE" tootip="Loja Fast Carro<br>Av. Abelardo bueno 1"></marker>
+                </ng-map>
+              <div class="btncenter">Av. Embaixador Abelardo Bueno nº 1 - Barra da Tijuca</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
