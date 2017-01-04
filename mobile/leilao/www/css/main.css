@@ -1,0 +1,65 @@
+.centered-spinner {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -14px;
+}
+ 
+.scroll
+{
+    height:100%;
+}
+
+.morePadding {
+    padding-top: 48px;
+    width: 100%;
+}
+
+.stepBar {
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.contentPadding {
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+
+.contentPaddingLess {
+    padding-top: 48px;
+    margin-bottom: 40px;
+}
+
+
+
+.imgStepBar {
+    width:100%;
+    max-width:400px;
+}
+
+.loginErroMsg{
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    color: darkorange;
+}
+
+.custom-class {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 20px !important;
+    overflow: visible !important;
+}
+.custom-class .checkbox input{
+  left: -15px !important;
+  
+}
+
+.textItem {
+    
+    margin-left: 18px;
+}

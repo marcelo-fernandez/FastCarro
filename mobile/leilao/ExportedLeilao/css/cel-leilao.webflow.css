@@ -1,0 +1,128 @@
+@media (max-width: 479px) {
+  .cartitle {
+    margin-top: 5px;
+    margin-left: 7px;
+  }
+  .cartitletext {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .cardesc {
+    margin-bottom: 7px;
+    margin-left: 7px;
+  }
+  .cardesctext {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  }
+  .topbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .carexposed {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .infobox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .4);
+    border-radius: 5px;
+  }
+  .infobox.infoboxinternal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right-width: 0px;
+  }
+  .infobox.infoboxinternal.infoboxlat {
+    border-right-width: 1px;
+  }
+  .infobox.price {
+    width: 120px;
+    margin-right: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #aa1812;
+    background-image: -webkit-linear-gradient(270deg, #c40505, #ee9292);
+    background-image: linear-gradient(180deg, #c40505, #ee9292);
+  }
+  .clockdiv {
+    margin-right: 7px;
+    margin-left: 7px;
+  }
+  .imgcontainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .pricetag {
+    font-family: 'Droid Sans', sans-serif;
+    color: #fcfbf8;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 6px #000;
+  }
+  .colorsep {
+    height: 4px;
+    background-color: #867997;
+  }
+  .minutestext {
+    color: #d11414;
+  }
+}

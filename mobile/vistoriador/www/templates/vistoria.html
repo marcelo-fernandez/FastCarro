@@ -21,7 +21,7 @@
             </label>
             <label class="item item-input" id="vistoria-input5">
                 <span class="input-label">Km</span>
-                <input type="text" placeholder="" ng-model="sQueue.km">
+                <input type="text" placeholder="" ng-model="sQueue.kmReal">
             </label>
             <label class="item item-input" id="vistoria-input5">
                 <span class="input-label">Ano Modelo</span>
@@ -43,7 +43,8 @@
         </form>
     </ion-content>
     <div style="position: absolute; bottom: 0px; width: 100%">
-        <button class="button button-full button-energized" ui-sref="menu.fotos">
+        <!--button class="button button-full button-energized" ui-sref="menu.fotos"-->
+        <button class="button button-full button-energized" ng-click="next()">                
             Próximo
         </button>
     </div>

@@ -16,7 +16,9 @@ angular.module('app.services', ['firebase','ionic'])
         setStartTime: setStartTime,
         getMinutesBetweenDates: getMinutesBetweenDates,
         getVistoriaDuration: getVistoriaDuration,
-        addDataToFirebase:addDataToFirebase
+        addDataToFirebase:addDataToFirebase,
+        saveCarData: saveCarData
+
     };
 
     console.log("vistoriaServ.js service loaded");
@@ -163,6 +165,27 @@ angular.module('app.services', ['firebase','ionic'])
         
         return def.promise;   
     }
+    
+    function saveCarData(sDate, owner, brand, model, km, modelYear, factoryYear, plate, renavam)
+        {
+            dateObj = stripDate(sDate);
+            console.log("inside function: Km = ", km);
+            console.log("inside function: plate = ", plate);
+            console.log("inside function: renavam = ", renavam);
+            
+            var refControle = firebase.database().ref('Agendamentos/' + dateObj.year + '/' + dateObj.month + '/' + dateObj.day + '/cliente/' + clientKey);
+            
+            //Starting setting the data
+            refControle.child("dados").child("Nome").set(owner);
+            refControle.child("carro").child("Marca").set(brand);
+            refControle.child("carro").child("Modelo").set(model);
+            refControle.child("carro").child("KmReal").set(km);
+            refControle.child("carro").child("AnoModelo").set(modelYear);
+            refControle.child("carro").child("FabModelo").set(factoryYear);
+            refControle.child("carro").child("placa").set(plate);
+            refControle.child("carro").child("renavam").set(renavam);
+            
+        }  
        
     //Need to get date in localtime and will convert to UTC
     function stripDate(date)

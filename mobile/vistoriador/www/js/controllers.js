@@ -12,42 +12,6 @@ angular.module('app.controllers', ['ionic'])
     
 })
 
-/*.controller('fotosCtrl', function($scope, vistoriaServ, $cordovaCamera, $cordovaFile, $ionicPopup) {
-	console.log('fotosCtrl loaded...')
-    var storageRef = firebase.storage().ref();
-    
-    var showAlert = function(msg, tit) {
-       var alertPopup = $ionicPopup.alert({
-         title: tit,
-         template: msg
-       })
-    };
-    
-    //showAlert('Pressione um botao para tirar foto', 'Info');
-    
-    $scope.takePicture = function (carside) {
-        
-        try{
-            $scope.carside = carside;
-            
-            var opcionesCaptura = {
-                destinationType: Camera.DestinationType.FILE_URI,
-                sourceType: Camera.PictureSourceType.CAMERA,
-            };
-
-            //$cordovaCamera.getPicture(opcionesCaptura)
-            //.then(processImage, processError);
-            console.log(opcionesCaptura, carside);
-            vistoriaServ.takePicture(opcionesCaptura, carside);
-            
-            }
-        catch(exception){
-            //vistoriaServ.showAlert(exception.message, 'Failed!');
-            console.log("erro no controler: " + exception);
-        }
-    };
-})*/
-
 .controller('fotosCtrl', function($scope, vistoriaServ, $cordovaCamera, $cordovaFile, $ionicPopup) {
 	console.log('fotosCtrl loaded...')
     var storageRef = firebase.storage().ref();
@@ -98,7 +62,7 @@ angular.module('app.controllers', ['ionic'])
 })
 
 
-.controller('vistoriaCtrl', function($scope, vistoriaServ, $firebaseArray, $stateParams) {
+.controller('vistoriaCtrl', function($scope, vistoriaServ, $firebaseArray, $stateParams, $state) {
 	console.log('vistoriaCtrl loaded...');
     
     var queue = vistoriaServ.getCachedQueue();
@@ -114,13 +78,15 @@ angular.module('app.controllers', ['ionic'])
     
     vistoriaServ.setStartTime(dateY);
     
-    console.log($scope.sQueue);
+    console.log("squeue=", $scope.sQueue);
     console.log("current user is:", firebase.auth().currentUser);
     
     $scope.next = function(){
         
         console.log("atualizando dados do carro");
+        vistoriaServ.saveCarData(dateY, $scope.sQueue.dados.Nome, $scope.sQueue.carro.Marca, $scope.sQueue.carro.Modelo, $scope.sQueue.kmReal, $scope.sQueue.carro.AnoModelo, $scope.sQueue.carro.AnoFabrica, $scope.sQueue.carro.placa, $scope.sQueue.carro.renavam)
         
+        $state.go('menu.fotos', {}, {reload: true});
     }
     
 })

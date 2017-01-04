@@ -41,6 +41,15 @@
             return def.promise;
         }
         
+        function saveCarData(owner, brand, model, km, modelYear, factoryYear, plate, renavam)
+        {
+            //var ref = 
+            console.log("inside function: Km = ", km);
+            console.log("inside function: plate = ", plate);
+            console.log("inside function: renavam = ", renavam);
+            
+        }
+        
         //Expose the public API methods - https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas/59/modelos/5940/anos/2014-3
         return {
             registerCar: registerCar,

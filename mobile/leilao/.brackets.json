@@ -1,0 +1,12 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Git/FastCarro-master/mobile/leilao/gulpfile.js",
+        "C:/Git/FastCarro-master/mobile/leilao/Exported/js/controllers.js",
+        "C:/Git/FastCarro-master/mobile/leilao/www/lib/ionicuirouter/ionicUIRouter.js",
+        "C:/Git/FastCarro-master/mobile/leilao/www/lib/ionic/js/ionic.min.js",
+        "C:/Git/FastCarro-master/mobile/leilao/Exported/js/app.js",
+        "C:/Git/FastCarro-master/mobile/leilao/www/js/controllers.js",
+        "C:/Git/FastCarro-master/mobile/leilao/www/lib/ionic/js/ionic.js",
+        "C:/Git/FastCarro-master/mobile/leilao/Exported/js/routes.js"
+    ]
+}

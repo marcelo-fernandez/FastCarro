@@ -1,0 +1,779 @@
+.topnavbar {
+  height: 30px;
+  background-color: #303f9f;
+}
+
+.logo {
+  height: auto;
+  max-width: none;
+}
+
+.navbar {
+  background-color: #3f51b5;
+  font-family: 'Droid Sans', sans-serif;
+  color: #3f9;
+  font-weight: 700;
+}
+
+.menuitem {
+  font-family: Roboto, sans-serif;
+  color: #e8eaf6;
+  letter-spacing: 0px;
+}
+
+.topinfo {
+  height: 30px;
+}
+
+.topinforow {
+  height: 30px;
+}
+
+.topinfotext {
+  padding-top: 5px;
+  color: #3f9;
+}
+
+.imgback {
+  height: 592px;
+  margin-bottom: 28px;
+  background-image: url('../images/background.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.painelavalia {
+  width: 350px;
+  height: 540px;
+  margin-top: 28px;
+  margin-right: 0px;
+  padding-right: 0px;
+  float: right;
+  background-color: rgba(0, 137, 123, .8);
+  box-shadow: 4px 4px 20px 0 #000;
+}
+
+.fipecontent {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-right: 0px;
+}
+
+.whitetitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 1px 1px 6px #000;
+}
+
+.formblock {
+  font-family: 'Droid Sans', sans-serif;
+  color: #fdfdfd;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fipesubmitbtn {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #303f9f;
+}
+
+.sessexplica {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #fff;
+}
+
+.stepcolumn1 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #258d43;
+}
+
+.steprow {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.stepcolumn2 {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #18b445;
+}
+
+.stepcolumn3 {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #3bc061;
+}
+
+.steptext {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  float: none;
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, .71);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sessmap {
+  margin-bottom: 32px;
+  background-color: transparent;
+}
+
+.contcolumns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.divcol {
+  width: 30%;
+  height: 250px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #763626;
+}
+
+.divcol.step1color {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 230px;
+  background-color: #3f51b5;
+}
+
+.divcol.step2color {
+  position: relative;
+  left: 4px;
+  width: 100%;
+  height: 230px;
+  float: none;
+  clear: none;
+  background-color: #7986cb;
+}
+
+.divcol.step3color {
+  width: auto;
+  height: 230px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #9fa8da;
+}
+
+.divcol2 {
+  width: 33%;
+  background-color: #763626;
+}
+
+.stepcol1 {
+  position: static;
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.relrol {
+  position: relative;
+  left: 10px;
+  top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 10px;
+}
+
+.testecol1 {
+  position: static;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 250px;
+  background-color: #68829e;
+}
+
+.divstepcontent {
+  padding-top: 15px;
+}
+
+.fa.fa-money.fa-5x {
+  text-align: center;
+}
+
+.stepcaption {
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, .71);
+  font-size: 1.7em;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.stepsrow {
+  margin-bottom: 38px;
+}
+
+.sessblue {
+  background-color: transparent;
+}
+
+.divider {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  clear: none;
+  border-style: solid solid dotted;
+  border-width: 1px 1px 0px;
+  border-color: rgba(0, 0, 0, .33) rgba(0, 0, 0, .33) rgba(0, 0, 0, .25);
+  text-align: left;
+}
+
+.sesscaption {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-family: Roboto, sans-serif;
+  color: rgba(26, 35, 126, .71);
+  font-size: 1.63em;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sesstext {
+  margin-bottom: 22px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, .71);
+  font-size: 1.3em;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sessbtn {
+  display: inline-block;
+  height: 54px;
+  margin-top: 0px;
+  padding-top: 15px;
+  font-family: Roboto, sans-serif;
+  text-align: left;
+}
+
+.divbtn {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.body {
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+}
+
+.whitecontainer {
+  margin-top: 32px;
+}
+
+.sesscusto {
+  margin-top: 16px;
+  padding-bottom: 32px;
+}
+
+.centericon {
+  display: block;
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centericon.iconpad {
+  margin-top: 27px;
+}
+
+.bottominfobar {
+  height: 100%;
+  margin-bottom: 1px;
+  padding-top: 24px;
+  background-color: #303f9f;
+}
+
+.bottomlinks {
+  color: hsla(0, 0%, 100%, .71);
+  line-height: 40px;
+}
+
+.address {
+  padding-top: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.containedspaced {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.wizardimg {
+  display: block;
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.wizardformcontainer {
+  height: 650px;
+  margin-top: 32px;
+}
+
+.bodystyle {
+  font-family: Roboto, sans-serif;
+}
+
+.pricetext {
+  margin-top: 16px;
+  color: #f90;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.pricetext.agendatext {
+  color: #fff;
+  font-size: 36px;
+}
+
+.priceblock {
+  display: block;
+  width: 350px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  border-radius: 15px;
+  background-color: #273c44;
+  color: #4007f7;
+}
+
+.priceblock.agendablock {
+  height: 400px;
+}
+
+.aviso {
+  display: block;
+  width: 75%;
+  height: 350px;
+  max-height: 100%;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  border: 1px solid #b3a8a8;
+  border-radius: 8px;
+  background-color: #e8eaf6;
+}
+
+.btnlancar {
+  display: block;
+  width: 70%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.btncenter {
+  display: block;
+  width: 75%;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: none;
+}
+
+.filterbar {
+  display: block;
+  height: 50px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 0px 14px;
+  border-radius: 10px;
+  background-color: #e8eaf6;
+}
+
+.valigncenter {
+  margin-top: 6px;
+}
+
+.filterrow {
+  height: 100%;
+}
+
+.painelcarro {
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background-color: #c5cae9;
+}
+
+.cartitle {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cartitle.carprice {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #cf0707;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.carrodetalhe {
+  margin-top: 10px;
+  padding-top: 0px;
+}
+
+.textinfo {
+  margin-top: 3px;
+  margin-left: 4px;
+}
+
+.iconinfo {
+  margin-right: 4px;
+  padding-left: 0px;
+  float: right;
+}
+
+.carinforow {
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000;
+}
+
+.twocolcarinfo {
+  margin-bottom: 4px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.carinfolinecontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98%;
+  padding-right: 4px;
+  padding-bottom: 6px;
+  padding-left: 4px;
+  border-color: rgba(0, 0, 0, .15);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.carinfocol {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.sliderconf {
+  height: 100%;
+}
+
+.actionsection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin-top: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.pricetime {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricetimeinternal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.pricetimeinternal.alignright {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.time {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.caixatempo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: rgba(243, 167, 6, .6);
+}
+
+.clockdiv {
+  margin-right: 5px;
+}
+
+.leilaosearchtop {
+  position: relative;
+}
+
+.btnleilaoaction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 125px;
+  height: 40px;
+  padding-left: 5px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(1, 167, 28, .8);
+  border-radius: 10px;
+  background-color: rgba(243, 167, 6, .6);
+}
+
+.btnleilaoaction.btnleilaocolor {
+  border-color: rgba(1, 34, 167, .35);
+  background-color: #e8eaf6;
+}
+
+.btnlabel {
+  font-weight: 500;
+}
+
+.btnicon {
+  background-color: transparent;
+  opacity: 0.55;
+  color: rgba(0, 0, 0, .2);
+}
+
+.btnicon.btniconfullcolor {
+  opacity: 0.86;
+}
+
+.finalizacontent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.caixacheck {
+  width: 75%;
+  height: 350px;
+  border: 1px solid #e9e9ea;
+  border-radius: 20px;
+  background-color: #fafbfc;
+}
+
+@media (max-width: 991px) {
+  .openmenu {
+    background-color: #303f9f;
+  }
+}
+
+@media (max-width: 767px) {
+  .aviso {
+    height: 95%;
+  }
+  .filterbar {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .painelcarro {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 479px) {
+  .painelavalia {
+    width: 300px;
+    float: right;
+  }
+  .whitetitle {
+    font-size: 18px;
+  }
+  .divcol.step1color {
+    display: block;
+    overflow: visible;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+  .priceblock {
+    width: 100%;
+  }
+  .aviso {
+    width: 95%;
+    height: 95%;
+  }
+  .filterbar {
+    height: auto;
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .painelcarro {
+    height: 100%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 22px;
+    padding-left: 5px;
+  }
+  .cartitle {
+    margin-top: 10px;
+  }
+  .textinfo {
+    font-size: 12px;
+    letter-spacing: -1px;
+  }
+  .twocolcarinfo {
+    padding-right: 0px;
+  }
+  .carinfolinecontainer {
+    width: 100%;
+    padding: 2px;
+  }
+  .actionsection {
+    display: inline-block;
+    width: 100%;
+  }
+  .btnleilaoaction {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .fotopage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .fotocol {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 100px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .fotoopt {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    clear: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-color: rgba(6, 53, 243, .6);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0 #000;
+  }
+}
+
